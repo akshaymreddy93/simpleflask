@@ -1,0 +1,242 @@
+[
+	{
+		"nconst": "nm0000001",
+		"primaryName": "Fred Astaire",
+		"birthYear": 1899,
+		"deathYear": 1987,
+		"primaryProfession": "soundtrack,actor,miscellaneous",
+		"knownForTitles": "tt0050419,tt0072308,tt0053137,tt0043044\r"
+	},
+	{
+		"nconst": "nm0000002",
+		"primaryName": "Lauren Bacall",
+		"birthYear": 1924,
+		"deathYear": 2014,
+		"primaryProfession": "actress,soundtrack",
+		"knownForTitles": "tt0037382,tt0040506,tt0038355,tt0117057\r"
+	},
+	{
+		"nconst": "nm0000003",
+		"primaryName": "Brigitte Bardot",
+		"birthYear": 1934,
+		"deathYear": "\\N",
+		"primaryProfession": "actress,soundtrack,producer",
+		"knownForTitles": "tt0059956,tt0063715,tt0049189,tt0057345\r"
+	},
+	{
+		"nconst": "nm0000004",
+		"primaryName": "John Belushi",
+		"birthYear": 1949,
+		"deathYear": 1982,
+		"primaryProfession": "actor,writer,soundtrack",
+		"knownForTitles": "tt0077975,tt0078723,tt0072562,tt0080455\r"
+	},
+	{
+		"nconst": "nm0000005",
+		"primaryName": "Ingmar Bergman",
+		"birthYear": 1918,
+		"deathYear": 2007,
+		"primaryProfession": "writer,director,actor",
+		"knownForTitles": "tt0050976,tt0083922,tt0060827,tt0050986\r"
+	},
+	{
+		"nconst": "nm0000006",
+		"primaryName": "Ingrid Bergman",
+		"birthYear": 1915,
+		"deathYear": 1982,
+		"primaryProfession": "actress,soundtrack,producer",
+		"knownForTitles": "tt0071877,tt0034583,tt0038109,tt0038787\r"
+	},
+	{
+		"nconst": "nm0000007",
+		"primaryName": "Humphrey Bogart",
+		"birthYear": 1899,
+		"deathYear": 1957,
+		"primaryProfession": "actor,soundtrack,producer",
+		"knownForTitles": "tt0040897,tt0038355,tt0034583,tt0033870\r"
+	},
+	{
+		"nconst": "nm0000008",
+		"primaryName": "Marlon Brando",
+		"birthYear": 1924,
+		"deathYear": 2004,
+		"primaryProfession": "actor,soundtrack,director",
+		"knownForTitles": "tt0078346,tt0047296,tt0068646,tt0078788\r"
+	},
+	{
+		"nconst": "nm0000009",
+		"primaryName": "Richard Burton",
+		"birthYear": 1925,
+		"deathYear": 1984,
+		"primaryProfession": "actor,producer,soundtrack",
+		"knownForTitles": "tt0087803,tt0057877,tt0061184,tt0065207\r"
+	},
+	{
+		"nconst": "nm0000010",
+		"primaryName": "James Cagney",
+		"birthYear": 1899,
+		"deathYear": 1986,
+		"primaryProfession": "actor,soundtrack,director",
+		"knownForTitles": "tt0029870,tt0055256,tt0042041,tt0035575\r"
+	},
+	{
+		"nconst": "nm0000011",
+		"primaryName": "Gary Cooper",
+		"birthYear": 1901,
+		"deathYear": 1961,
+		"primaryProfession": "actor,soundtrack,producer",
+		"knownForTitles": "tt0033891,tt0049233,tt0027996,tt0044706\r"
+	},
+	{
+		"nconst": "nm0000012",
+		"primaryName": "Bette Davis",
+		"birthYear": 1908,
+		"deathYear": 1989,
+		"primaryProfession": "actress,soundtrack,make_up_department",
+		"knownForTitles": "tt0030287,tt0042192,tt0056687,tt0035140\r"
+	},
+	{
+		"nconst": "nm0000013",
+		"primaryName": "Doris Day",
+		"birthYear": 1922,
+		"deathYear": "\\N",
+		"primaryProfession": "soundtrack,actress,producer",
+		"knownForTitles": "tt0062558,tt2073386,tt0049470,tt0117665\r"
+	},
+	{
+		"nconst": "nm0000014",
+		"primaryName": "Olivia de Havilland",
+		"birthYear": 1916,
+		"deathYear": "\\N",
+		"primaryProfession": "actress,soundtrack",
+		"knownForTitles": "tt0058213,tt0031381,tt0041452,tt0029843\r"
+	},
+	{
+		"nconst": "nm0000015",
+		"primaryName": "James Dean",
+		"birthYear": 1931,
+		"deathYear": 1955,
+		"primaryProfession": "actor,miscellaneous",
+		"knownForTitles": "tt0048545,tt0049261,tt0045395,tt0048028\r"
+	},
+	{
+		"nconst": "nm0000016",
+		"primaryName": "Georges Delerue",
+		"birthYear": 1925,
+		"deathYear": 1992,
+		"primaryProfession": "composer,soundtrack,music_department",
+		"knownForTitles": "tt0069946,tt0079477,tt0091763,tt0096320\r"
+	},
+	{
+		"nconst": "nm0000017",
+		"primaryName": "Marlene Dietrich",
+		"birthYear": 1901,
+		"deathYear": 1992,
+		"primaryProfession": "soundtrack,actress,music_department",
+		"knownForTitles": "tt0055031,tt0051201,tt0042994,tt0020697\r"
+	},
+	{
+		"nconst": "nm0000018",
+		"primaryName": "Kirk Douglas",
+		"birthYear": 1916,
+		"deathYear": "\\N",
+		"primaryProfession": "actor,producer,soundtrack",
+		"knownForTitles": "tt0054331,tt0043465,tt0044391,tt0049456\r"
+	},
+	{
+		"nconst": "nm0000019",
+		"primaryName": "Federico Fellini",
+		"birthYear": 1920,
+		"deathYear": 1993,
+		"primaryProfession": "writer,director,assistant_director",
+		"knownForTitles": "tt0056801,tt0071129,tt0053779,tt0050783\r"
+	},
+	{
+		"nconst": "nm0000020",
+		"primaryName": "Henry Fonda",
+		"birthYear": 1905,
+		"deathYear": 1982,
+		"primaryProfession": "actor,producer,soundtrack",
+		"knownForTitles": "tt0064116,tt0052462,tt0050083,tt0032551\r"
+	},
+	{
+		"nconst": "nm0000021",
+		"primaryName": "Joan Fontaine",
+		"birthYear": 1917,
+		"deathYear": 2013,
+		"primaryProfession": "actress,soundtrack,producer",
+		"knownForTitles": "tt0034248,tt0044760,tt0032976,tt0040536\r"
+	},
+	{
+		"nconst": "nm0000022",
+		"primaryName": "Clark Gable",
+		"birthYear": 1901,
+		"deathYear": 1960,
+		"primaryProfession": "actor,soundtrack,producer",
+		"knownForTitles": "tt0055184,tt0031381,tt0025316,tt0026752\r"
+	},
+	{
+		"nconst": "nm0000023",
+		"primaryName": "Judy Garland",
+		"birthYear": 1922,
+		"deathYear": 1969,
+		"primaryProfession": "soundtrack,actress",
+		"knownForTitles": "tt0032138,tt0047522,tt0037059,tt0040308\r"
+	},
+	{
+		"nconst": "nm0000024",
+		"primaryName": "John Gielgud",
+		"birthYear": 1904,
+		"deathYear": 2000,
+		"primaryProfession": "actor,writer,director",
+		"knownForTitles": "tt0076574,tt0082031,tt0045943,tt0071877\r"
+	},
+	{
+		"nconst": "nm0000025",
+		"primaryName": "Jerry Goldsmith",
+		"birthYear": 1929,
+		"deathYear": 2004,
+		"primaryProfession": "music_department,soundtrack,composer",
+		"knownForTitles": "tt0120762,tt0112178,tt0100802,tt0092455\r"
+	},
+	{
+		"nconst": "nm0000026",
+		"primaryName": "Cary Grant",
+		"birthYear": 1904,
+		"deathYear": 1986,
+		"primaryProfession": "actor,soundtrack,producer",
+		"knownForTitles": "tt0038787,tt0056923,tt0032599,tt0053125\r"
+	},
+	{
+		"nconst": "nm0000027",
+		"primaryName": "Alec Guinness",
+		"birthYear": 1914,
+		"deathYear": 2000,
+		"primaryProfession": "actor,soundtrack,writer",
+		"knownForTitles": "tt0076759,tt0051739,tt0050212,tt0041546\r"
+	},
+	{
+		"nconst": "nm0000028",
+		"primaryName": "Rita Hayworth",
+		"birthYear": 1918,
+		"deathYear": 1987,
+		"primaryProfession": "actress,soundtrack,producer",
+		"knownForTitles": "tt0050815,tt0040525,tt0036723,tt0038559\r"
+	},
+	{
+		"nconst": "nm0000029",
+		"primaryName": "Margaux Hemingway",
+		"birthYear": 1954,
+		"deathYear": 1996,
+		"primaryProfession": "actress,miscellaneous",
+		"knownForTitles": "tt0087864,tt0084786,tt0077800,tt0074802\r"
+	},
+	{
+		"nconst": "nm0000030",
+		"primaryName": "Audrey Hepburn",
+		"birthYear": 1929,
+		"deathYear": 1993,
+		"primaryProfession": "actress,soundtrack",
+		"knownForTitles": "tt0047437,tt0046250,tt0058385,tt0054698"
+	}
+]
