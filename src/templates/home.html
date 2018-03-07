@@ -13,11 +13,9 @@
     <div class="form-group">
       {{render_field(form.password, class_="form-control")}}
     </div>
-    <p><input type="submit" class="btn btn-primary" value="Submit"></p>
+    <p><input type="submit" class="btn btn-primary" value="Login"></p>
   </form>
 
-  {% if message %}
-  <p>{{error}}</p>
-  {% endif %}
+{{message}}
 
 {% endblock %}

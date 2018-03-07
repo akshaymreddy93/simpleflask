@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for, session, flash
+from functools import wraps
 
 #Mappers
 from flask_sqlalchemy import SQLAlchemy
@@ -7,8 +8,7 @@ from sqlalchemy import create_engine
 from mongoengine import *
 
 #Local
-from forms import Login
-
+from forms import Login, SearchForm
 
 app = Flask(__name__)  # Setting up the flask application
 
@@ -48,10 +48,23 @@ class Basic(DynamicDocument):
     knownForTitles = StringField(required=True)
 
 
-@app.route('/', methods = ['GET','POST'])
-def home():
-    form = Login(request.form)
+# Check if user logged in
+def is_logged_in(f):
+    @wraps(f)
+    def wrap(*args, **kwargs):
+        if 'logged_in' in session:
+            return f(*args, **kwargs)
+        else:
+            flash('Unauthorized, Please login', 'danger')
+            return redirect(url_for('LoginPage'))
+    return wrap
 
+
+#Login
+@app.route('/', methods = ['GET','POST'])
+def LoginPage():
+    message = ""
+    form = Login(request.form)
     if request.method == 'POST' and form.validate():
         username = form.username.data
         password = form.password.data
@@ -59,10 +72,34 @@ def home():
         result = conn.execute(s)
         validation = result.fetchone()
         if username == validation[1] and password == validation[2]:
-            return render_template('search.html')
+            session['logged_in'] = True
+            return redirect(url_for('search'))
         else:
-            return render_template('home.html', message = {'error':'Invalid Login'}, form = form)
+            return render_template('home.html', form = form, message = 'Invalid Credentials')
     return render_template('home.html', form = form)
 
+
+#Logout
+@app.route('/logout')
+@is_logged_in
+def logout():
+    session.clear()
+    flash('You are now logged out', 'success')
+    return redirect(url_for('LoginPage'))
+
+
+#Search
+@app.route('/search', methods = ['GET','POST'])
+@is_logged_in
+def search():
+    search = ""
+    form = SearchForm(request.form)
+    if request.method == 'POST' and form.validate():
+        search = form.search.data
+
+    return render_template('search.html', form=form, search = search)
+
+
 if __name__ == '__main__' :
+    app.secret_key='demo123'
     app.run(debug=True)

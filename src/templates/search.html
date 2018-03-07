@@ -1,7 +1,16 @@
 {% extends 'layout.html' %}
 
-{% block search %}
+{% block body %}
 
-<h1>Search</h1>
+{% from "includes/_formhelpers.html" import render_field %}
+<form method="POST" action="">
+  <div class="form-group">
+    {{render_field(form.search, class_="form-control")}}
+    <small id="searchHelp" class="form-text text-muted">Genre, Director Name, Movie Title</small>
+  </div>
+  <p><input type="submit" class="btn btn-primary" value="Go"></p>
+</form>
+
+{{search}}
 
 {% endblock %}

@@ -8,6 +8,3 @@ es = Elasticsearch()
 
 for obj in Basic.objects:
     print(obj.primaryName)
-
-#s = json.dumps(Basic())
-#print(s)

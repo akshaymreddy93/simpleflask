@@ -3,5 +3,10 @@
         <div class="navbar-header">
           <a class="navbar-brand">Simple Flask</a>
         </div>
+          <ul class="nav navbar-nav navbar-right">
+            {% if session.logged_in %}
+            <li><a href="/logout">Logout</a></li>
+            {% endif %}
+         </ul>
       </div>
 </nav>
