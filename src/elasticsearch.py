@@ -1,10 +1,15 @@
-from elasticsearch import Elasticsearch
+# from elasticsearch import Elasticsearch
 from app import Basic
 #import simplejson as json
 import json
 
 
-es = Elasticsearch()
+# es = Elasticsearch()
 
-for obj in Basic.objects:
-    print(obj.primaryName)
+
+# data = json.loads(open('companies.json').read())
+# print(data)
+
+with open('companies.json') as f:
+        for line in f:
+            print(line.encode('ascii', 'ignore').decode('utf-8'))

@@ -3,7 +3,7 @@
 {% block body %}
 
 {% from "includes/_formhelpers.html" import render_field %}
-<form method="POST" action="">
+<form method="GET" action="">
   <div class="form-group">
     {{render_field(form.search, class_="form-control")}}
     <small id="searchHelp" class="form-text text-muted">Genre, Director Name, Movie Title</small>
@@ -11,6 +11,23 @@
   <p><input type="submit" class="btn btn-primary" value="Go"></p>
 </form>
 
-{{search}}
+{% if hits %}
+<h4>Found: {{hits}}</h4>
 
+<table class="table table-striped">
+  <tbody>
+    {% for i in result %}
+    <tr>
+      <td> {{i._source.name}} </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+{% for p in pages %}
+
+  <a href="/search?search={{q}}&page={{p}}">{{p}}</a>
+
+{% endfor %}
 {% endblock %}

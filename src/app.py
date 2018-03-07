@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 from functools import wraps
+import requests
 
 #Mappers
 from flask_sqlalchemy import SQLAlchemy
@@ -92,12 +93,19 @@ def logout():
 @app.route('/search', methods = ['GET','POST'])
 @is_logged_in
 def search():
-    search = ""
-    form = SearchForm(request.form)
-    if request.method == 'POST' and form.validate():
-        search = form.search.data
 
-    return render_template('search.html', form=form, search = search)
+    form = SearchForm(request.form)
+    if request.args.get('search'):
+        search = request.args.get('search')
+        page = int(request.args.get('page',1))
+        url = "http://localhost:9200/flaskapp/movie/_search"
+        querystring = {"q":search, "size":10, "from": (page*10)-10}
+        response = requests.request("GET", url, params=querystring)
+        data = response.json()
+        total_pages = int(data["hits"]["total"]/10) + 1
+        return render_template('search.html', form=form, hits = data["hits"]["total"], result = data["hits"]["hits"], q = search, pages = [i for i in range(1,total_pages+1)])
+
+    return render_template('search.html', form=form)
 
 
 if __name__ == '__main__' :
